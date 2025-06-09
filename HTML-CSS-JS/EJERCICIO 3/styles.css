@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  background-color: #e0f0ff; 
+}
+
+tr:nth-child(2) td {
+  background-color: #f5e0ff;
+}
+
+td:nth-child(3) {
+  background-color: #c0e0c0;
+}
+
+tr:nth-child(2) td:nth-child(3) {
+  background-color: #808080; 
+}
+
+td:first-child,
+tr:last-child td:last-child {
+  background-color: orange;
+}
+
+tr:nth-child(3) td:nth-child(2) {
+  background-color: #f0d0d0;
+}

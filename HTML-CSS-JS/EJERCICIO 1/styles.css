@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 40px;
+}
+
+h1, h2 {
+  color: #333366;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0044cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+section {
+  background-color: coral;
+  padding: 20px;
+  border-radius: 8px;
+}
