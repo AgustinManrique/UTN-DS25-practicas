@@ -6,20 +6,6 @@ Cada ejercicio sigue consignas específicas y utiliza buenas prácticas y conven
 
 ---
 
-## 📁 Estructura del Repositorio
-
-📂 HTML- CSS - JS
-
-├── Ejercicio 1/
-│  ...
-├── Ejercicio 2/
-│  ...
-├── Ejercicio 3/
-│  ...
-└── README.md
-
----
-
 ## 📝 Ejercicios
 
 ### 1️⃣ Curriculum Vitae (CV)
