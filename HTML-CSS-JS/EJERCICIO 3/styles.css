@@ -9,23 +9,26 @@ td {
   background-color: #e0f0ff; 
 }
 
-tr:nth-child(2) td {
+td.especial-b3 {
+  background-color: #808080;
+}
+
+.fila2 td {
   background-color: #f5e0ff;
 }
 
-td:nth-child(3) {
+.columna3 {
   background-color: #c0e0c0;
 }
 
-tr:nth-child(2) td:nth-child(3) {
-  background-color: #808080; 
-}
-
-td:first-child,
-tr:last-child td:last-child {
+.primera-ultima {
   background-color: orange;
 }
 
-tr:nth-child(3) td:nth-child(2) {
+.especial-c2 {
   background-color: #f0d0d0;
+}
+
+td.especial-b3 {
+  background-color: #808080;
 }
