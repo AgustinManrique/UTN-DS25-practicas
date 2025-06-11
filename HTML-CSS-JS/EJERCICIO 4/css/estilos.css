@@ -12,8 +12,8 @@ body {
 }
 
 header {
-  background: #fff;
-  color: #222;
+  background: #1976d2;
+  color: #fff;
   padding: 0 0 10px 0;
   display: flex;
   flex-direction: column;
@@ -26,33 +26,39 @@ header {
   align-items: center;
   justify-content: center;
   padding: 28px 0 10px 0;
-  gap: 28px;
+  gap: 0;
+  position: relative;
 }
 
 .logo-nombre {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  position: static;
+  width: 100%;
+  position: relative;
 }
 
 .logo-nombre img {
   width: 100px;
-  height: auto;
-  margin-right: 22px;
-  position: static;
-  left: unset;
-  top: unset;
-  transform: none;
+  height: 100px;
+  margin-right: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 12px #1976d244;
+  object-fit: cover;
+  border: 4px solid #fff;
 }
 
 .logo-nombre h1 {
-  color: #ffb300;
-  text-align: left;
+  color: #fff;
+  text-align: center;
   margin: 0;
   font-size: 2.3rem;
-  text-shadow: 1px 1px 6px #fff, 0 2px 8px #ffb30033;
+  text-shadow: 1px 1px 6px #1976d2, 0 2px 8px #fff3;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -189,13 +195,13 @@ input:focus, select:focus, textarea:focus {
 }
 
 footer {
-  background: #222;
+  background: #1976d2;
   color: #fff;
   padding: 15px;
   text-align: center;
   margin-top: auto;
   font-size: 0.98rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid #1565c0;
 }
 
 footer a {
