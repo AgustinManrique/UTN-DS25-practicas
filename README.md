@@ -6,33 +6,6 @@ Cada ejercicio sigue consignas específicas y utiliza buenas prácticas y conven
 
 ---
 
-## 📝 Ejercicios
-
-### 1️⃣ Curriculum Vitae (CV)
-
-👤 Sitio con cuatro secciones:
-- Datos personales
-- Estudios
-- Experiencia laboral
-- Hobbies  
-🔗 Navegación entre todas las páginas  
-
-
----
-
-### 2️⃣ Libro HTML
-
-📚 Un sitio tipo "libro" con:
-- Índice de capítulos y navegación entre ellos
-- 4 capítulos con contenido simulado (`Lorem Ipsum`)  
-
----
-
-### 3️⃣ Tabla de Colores
-
-🎨 Una tabla de 4x4 con reglas visuales:
-- Bordes y colores específicos
-- Celdas coloreadas según su posición  
 
 ---
 
