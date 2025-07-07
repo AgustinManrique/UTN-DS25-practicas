@@ -1,20 +1,49 @@
+import { AppBar, Toolbar, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
-      <div className="nav-content">
-        <ul>
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/ficcion">Ficción</Link></li>
-          <li><Link to="/poesia">Poesía</Link></li>
-          <li><Link to="/historia">Historia</Link></li>
-          <li><Link to="/infantil">Infantil</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
-        </ul>
-        <Link to="/registro" className="btn-registro">Registrarse</Link>
-      </div>
-    </nav>
+    <AppBar position="static" sx={{ bgcolor: '#1976d2' }}>
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box sx={{ display: 'flex', gap: 2, flex: 1 }}>
+          <Button color="inherit" component={Link} to="/ficcion">Ficción</Button>
+          <Button color="inherit" component={Link} to="/poesia">Poesía</Button>
+          <Button color="inherit" component={Link} to="/historia">Historia</Button>
+          <Button color="inherit" component={Link} to="/infantil">Infantil</Button>
+        </Box>
+        <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+          <Button
+            component={Link}
+            to="/"
+            variant="outlined"
+            sx={{
+              borderColor: '#1976d2',
+              color: '#1976d2',
+              background: '#fff',
+              fontWeight: 600,
+              '&:hover': {
+                borderColor: '#1976d2',
+                color: '#fff',
+                background: '#1976d2',
+              },
+            }}
+          >
+            Inicio
+          </Button>
+        </Box>
+        <Box sx={{ display: 'flex', gap: 2, flex: 1, justifyContent: 'flex-end' }}>
+          <Button color="inherit" component={Link} to="/contacto">Contacto</Button>
+          <Button
+            component={Link}
+            to="/registro"
+            variant="contained"
+            sx={{ bgcolor: '#ffb300', color: '#fff', fontWeight: 600, borderRadius: 3, boxShadow: 2, '&:hover': { bgcolor: '#ff9800' } }}
+          >
+            Registrarse
+          </Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
 
