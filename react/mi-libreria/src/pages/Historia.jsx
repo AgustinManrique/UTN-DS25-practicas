@@ -1,3 +1,5 @@
+import BookCard from '../components/BookCard';
+
 function Historia() {
   return (
     <main>
@@ -11,12 +13,7 @@ function Historia() {
           { img: "libro21.jpg", titulo: "La historia del siglo XX", autor: "Eric Hobsbawm", desc: "Visión global del siglo pasado." },
           { img: "libro3.jpg", titulo: "Breve historia de la humanidad", autor: "Yuval Noah Harari", desc: "Resumen histórico fascinante." }
         ].map((libro, i) => (
-          <div className="libro-detalle" key={i}>
-            <img src={`/img/${libro.img}`} alt={`Portada ${libro.titulo}`} />
-            <h3>{libro.titulo}</h3>
-            <p><em>{libro.autor}</em></p>
-            <p>{libro.desc}</p>
-          </div>
+          <BookCard key={i} {...libro} />
         ))}
       </div>
     </main>

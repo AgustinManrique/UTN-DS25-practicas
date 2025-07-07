@@ -1,3 +1,5 @@
+import BookCard from '../components/BookCard';
+
 function Poesia() {
   return (
     <main>
@@ -11,12 +13,7 @@ function Poesia() {
           { img: "libro15.jpg", titulo: "El cuervo y otros poemas", autor: "Edgar Allan Poe", desc: "Poemas góticos y misteriosos." },
           { img: "libro16.jpg", titulo: "Versos sencillos", autor: "José Martí", desc: "Poesía sencilla y profunda." }
         ].map((libro, i) => (
-          <div className="libro-detalle" key={i}>
-            <img src={`/img/${libro.img}`} alt={`Portada ${libro.titulo}`} />
-            <h3>{libro.titulo}</h3>
-            <p><em>{libro.autor}</em></p>
-            <p>{libro.desc}</p>
-          </div>
+          <BookCard key={i} {...libro} />
         ))}
       </div>
     </main>

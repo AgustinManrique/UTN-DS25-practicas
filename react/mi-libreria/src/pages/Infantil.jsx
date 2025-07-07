@@ -1,3 +1,5 @@
+import BookCard from '../components/BookCard';
+
 function Infantil() {
   return (
     <main>
@@ -11,12 +13,7 @@ function Infantil() {
           { img: "libro26.jpg", titulo: "La telaraña de Carlota", autor: "E.B. White", desc: "Amistad entre un cerdito y una araña." },
           { img: "libro4.jpg", titulo: "El principito", autor: "Antoine de Saint-Exupéry", desc: "Historia poética y filosófica." },
         ].map((libro, i) => (
-          <div className="libro-detalle" key={i}>
-            <img src={`/img/${libro.img}`} alt={`Portada ${libro.titulo}`} />
-            <h3>{libro.titulo}</h3>
-            <p><em>{libro.autor}</em></p>
-            <p>{libro.desc}</p>
-          </div>
+          <BookCard key={i} {...libro} />
         ))}
       </div>
     </main>

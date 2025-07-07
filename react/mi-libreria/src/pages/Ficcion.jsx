@@ -1,44 +1,20 @@
+import BookCard from '../components/BookCard';
+
 function Ficcion() {
   return (
     <main>
       <h2>Ficción</h2>
       <div className="libros-lista">
-        <div className="libro-detalle">
-          <img src="/img/libro5.jpg" alt="El nombre del viento" />
-          <h3>El nombre del viento</h3>
-          <p><em>Patrick Rothfuss</em></p>
-          <p>La historia de Kvothe, un joven prodigio.</p>
-        </div>
-        <div className="libro-detalle">
-          <img src="/img/libro6.jpg" alt="1984" />
-          <h3>1984</h3>
-          <p><em>George Orwell</em></p>
-          <p>Novela distópica sobre vigilancia y control.</p>
-        </div>
-        <div className="libro-detalle">
-          <img src="/img/libro7.jpg" alt="Dune" />
-          <h3>Dune</h3>
-          <p><em>Frank Herbert</em></p>
-          <p>Epopeya de ciencia ficción en un planeta desértico.</p>
-        </div>
-        <div className="libro-detalle">
-          <img src="/img/libro8.jpg" alt="Crónica del pájaro..." />
-          <h3>Crónica del pájaro que da cuerda al mundo</h3>
-          <p><em>Haruki Murakami</em></p>
-          <p>Una historia surrealista y misteriosa.</p>
-        </div>
-        <div className="libro-detalle">
-          <img src="/img/libro9.jpg" alt="Fahrenheit 451" />
-          <h3>Fahrenheit 451</h3>
-          <p><em>Ray Bradbury</em></p>
-          <p>Sociedad donde los libros están prohibidos.</p>
-        </div>
-        <div className="libro-detalle">
-          <img src="/img/libro10.jpg" alt="Neuromante" />
-          <h3>Neuromante</h3>
-          <p><em>William Gibson</em></p>
-          <p>Pionero del cyberpunk.</p>
-        </div>
+        {[
+          { img: "libro5.jpg", titulo: "El nombre del viento", autor: "Patrick Rothfuss", desc: "La historia de Kvothe, un joven prodigio." },
+          { img: "libro6.jpg", titulo: "1984", autor: "George Orwell", desc: "Novela distópica sobre vigilancia y control." },
+          { img: "libro7.jpg", titulo: "Dune", autor: "Frank Herbert", desc: "Epopeya de ciencia ficción en un planeta desértico." },
+          { img: "libro8.jpg", titulo: "Crónica del pájaro que da cuerda al mundo", autor: "Haruki Murakami", desc: "Una historia surrealista y misteriosa." },
+          { img: "libro9.jpg", titulo: "Fahrenheit 451", autor: "Ray Bradbury", desc: "Sociedad donde los libros están prohibidos." },
+          { img: "libro10.jpg", titulo: "Neuromante", autor: "William Gibson", desc: "Pionero del cyberpunk." }
+        ].map((libro, i) => (
+          <BookCard key={i} {...libro} />
+        ))}
       </div>
     </main>
   );
